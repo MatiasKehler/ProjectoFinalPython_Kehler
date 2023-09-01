@@ -1,0 +1,28 @@
+{% extends 'medicos/base.html' %}
+{% load static %}
+
+{% block contenido %}
+    <h1>TURNOS PAAA</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Especialidad</th>
+                <th>Fecha del turno</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {% for t in fechas %}
+            <tr>
+                <td>{{ t.especialidad }}</td>
+                <td>{{ t.turno }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Asignar Turnos</h2>
+    <a href="{% url 'agregar_turno' %}">Agregar Turnos</a>
+    
+{% endblock contenido %}

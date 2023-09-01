@@ -1,0 +1,67 @@
+{% extends 'NSBerazategui/base.html' %}
+{% load static %}
+
+{% block contenido %}
+  <main>
+    <section class="h1_quienes_somos">
+      <figure class="imagen">
+        <img class="img-fluid" src="{% static 'NSBerazategui/img/quienes_somos.jpg' %}" alt="imagen_de_quienes_somos">
+      </figure>
+      <div class="container">
+        <h1 class="titulo">Somos un equipo de profesionales con vasta experiencia en sus distintas especialidades y que
+          hace más de 15 años brindamos a la comunidad de Berazategui y alrededores atención médica de calidad. Nos
+          ocupamos de la contención y el Servicio, crecemos día a día en Tecnología de vanguardia para el cuidado de
+          todos nuestros pacientes y que nuestra única misión sea "Trabajamos para cuidarte".</h1>
+        <h2 class="vision">Visión</h2>
+        <h3 class="vision1">Trabajamos para cuidarte. Nuestro objetivo principal es ocuparnos de la Calidad de atención
+          al paciente, brindar un servicio personalizado y eficiente a toda la Comunidad.</h3>
+        <h4 class="mision">Misión</h4>
+        <h5 class="mision1">
+          <li>Dedicación y Servicio nos disponemos a todos los pacientes.</li>
+          <li>Compromiso, Responsabilidad y Profesionalismo hacia la atención médica.</li>
+          <li>Pasión y Energía para el día a día de trabajo.</li>
+          <br>
+        </h5>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="nuestro_equipo">Nuestro Equipo</h2>
+      <h3 class="nuestro_equipo1">Conocé a los principales referentes del Nuevo Sanatorio Berazategui</h3>
+      <div class="row">
+        <div class="col medicos">
+          <p class="nombre_medico">Soto, Leonardo</p>
+          <p class="cargo_mat">Traumatologia - Mat. 230792.</p>
+        </div>
+        <div class="col medicos">
+          <p class="nombre_medico">Vettese, Marcelo</p>
+          <p class="cargo_mat">Clínica Médica - Mat. 226709.</p>
+        </div>
+        <div class="col medicos">
+          <p class="nombre_medico">Ruiz Deza, Gustavo</p>
+          <p class="cargo_mat">Cardiología - Mat. 221099.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col medicos">
+          <p class="nombre_medico">Sainz, Ariel</p>
+          <p class="cargo_mat">Neurocirugía - Mat. 230295.</p>
+        </div>
+        <div class="col medicos">
+          <p class="nombre_medico">Lopez, Gustavo</p>
+          <p class="cargo_mat">Urología - Mat. 226550.</p>
+        </div>
+        <div class="col medicos">
+          <p class="nombre_medico">Gorini, Nestor</p>
+          <p class="cargo_mat">Hematología - Mat. 229616.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col medicos">
+          <p class="nombre_medico">Geremé, Gustavo</p>
+          <p class="cargo_mat">Director Medico - Mat. 18866.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock contenido %}

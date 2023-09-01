@@ -1,0 +1,41 @@
+{% extends 'medicos/base.html' %}
+{% load static %}
+
+{% block contenido %}
+
+    <h1>MEDICOS PAAA</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Apellido</th>
+                <th>Nombre</th>
+                <th>Matricula</th>
+                <th>Profesion</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+                <th>Email</th>
+                <th>Sector</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for d in doctor %}
+            <tr>
+                <td>{{ d.id }}</td>
+                <td>{{ d.apellido }}</td>
+                <td>{{ d.nombre }}</td>
+                <td>{{ d.matricula }}</td>
+                <td>{{ d.profesion }}</td>
+                <td>{{ d.usuario }}</td>
+                <td>{{ d.contraseña }}</td>
+                <td>{{ d.email }}</td>
+                <td>{{ d.sector }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Agregar Medicos</h2>
+    <a href="{% url 'agregar_medico' %}">Agregar Medico</a>
+{% endblock contenido %}

@@ -1,0 +1,162 @@
+{% extends 'NSBerazategui/base.html' %}
+{% load static %}
+
+{% block contenido %}
+  <main>
+    <figure>
+      <img class="img-fluid" src="{% static 'NSBerazategui/img/nuestros_servicios.jpg' %}" alt="imagen_de_servicios">
+    </figure>
+
+    <section class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-3 g-4 my_cards1">
+        <div class="col">
+          <div class="card h-100">
+            <img src="{% static 'NSBerazategui/img/centro_de_emergencias.jpg' %}" class="card-img-top" alt="imagen_medicos">
+            <div class="card-body">
+              <h1 class="card-title my_cards">Centro de Emergencias</h1>
+            </div>
+          </div>
+          <section class="ver_mas3">
+            <div>
+              <button class="button_Ver3">
+                <a href="{% url 'nuestros_servicios' %}">+ INFO</a>
+              </button>
+            </div>
+          </section>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="{% static 'NSBerazategui/img/Internacion.jpg' %}" class="card-img-top" alt="imagen_administrativos">
+            <div class="card-body">
+              <h2 class="card-title my_cards">Internación</h2>
+            </div>
+          </div>
+          <section class="ver_mas3">
+            <div>
+              <button class="button_Ver3">
+                <a href="{% url 'nuestros_servicios' %}">+ INFO</a>
+              </button>
+            </div>
+          </section>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="{% static 'NSBerazategui/img/Consultorios_externos.jpg' %}" class="card-img-top" alt="imagen_consultorio_externo">
+            <div class="card-body">
+              <h3 class="card-title my_cards">Consultorios Externos</h3>
+            </div>
+          </div>
+          <section class="ver_mas3">
+            <div>
+              <button class="button_Ver3">
+                <a href="{% url 'nuestros_servicios' %}">+ INFO</a>
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-3 g-4 my_cards1">
+        <div class="col">
+          <div class="card h-100">
+            <img src="{% static 'NSBerazategui/img/unidad_de_terapia_intensiva.jpg' %}" class="card-img-top"
+              alt="imagen_unidad_de_terapia_instensiva">
+            <div class="card-body">
+              <h2 class="card-title my_cards">unidad de terapia intensiva</h2>
+            </div>
+          </div>
+          <section class="ver_mas3">
+            <div>
+              <button class="button_Ver3">
+                <a href="{% url 'nuestros_servicios' %}">+ INFO</a>
+              </button>
+            </div>
+          </section>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="{% static 'NSBerazategui/img/Hemodinamia.jpg' %}" class="card-img-top" alt="imagen_hemodinamia">
+            <div class="card-body">
+              <h3 class="card-title my_cards">Hemodinamia</h3>
+            </div>
+          </div>
+          <section class="ver_mas3">
+            <div>
+              <button class="button_Ver3">
+                <a href="{% url 'nuestros_servicios' %}">+ INFO</a>
+              </button>
+            </div>
+          </section>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="{% static 'NSBerazategui/img/Depto_de_Enfermedades_Cardiovasculares.jpg' %}" class="card-img-top" alt="imagen_camas_uti">
+            <div class="card-body">
+              <h4 class="card-title my_cards">Depto. de Enfermedades Cardiovasculares</h4>
+            </div>
+          </div>
+          <section class="ver_mas3">
+            <div>
+              <button class="button_Ver3">
+                <a href="{% url 'nuestros_servicios' %}">+ INFO</a>
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-3 g-4 my_cards1">
+        <div class="col">
+          <div class="card h-100">
+            <img src="{% static 'NSBerazategui/img/centro_quirurgico.jpg' %}" class="card-img-top" alt="imagen_de_quirofano">
+            <div class="card-body">
+              <h2 class="card-title my_cards">Centro Quirúrgico</h2>
+            </div>
+          </div>
+          <section class="ver_mas3">
+            <div>
+              <button class="button_Ver3">
+                <a href="{% url 'nuestros_servicios' %}">+ INFO</a>
+              </button>
+            </div>
+          </section>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="{% static 'NSBerazategui/img/diagnostico_imagenes.jpg' %}" class="card-img-top" alt="imagen_de_resonancia">
+            <div class="card-body">
+              <h3 class="card-title my_cards">Diagnóstico por imágenes</h3>
+            </div>
+          </div>
+          <section class="ver_mas3">
+            <div>
+              <button class="button_Ver3">
+                <a href="{% url 'nuestros_servicios' %}">+ INFO</a>
+              </button>
+            </div>
+          </section>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="{% static 'NSBerazategui/img/Laboratorio.jpg' %}" class="card-img-top" alt="imagen_del_laboratorio">
+            <div class="card-body">
+              <h4 class="card-title my_cards">Laboratorio</h4>
+            </div>
+          </div>
+          <section class="ver_mas3">
+            <div>
+              <button class="button_Ver3">
+                <a href="{% url 'nuestros_servicios' %}">+ INFO</a>
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+  </main>
+{% endblock contenido %}
